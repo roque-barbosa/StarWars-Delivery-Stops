@@ -14,7 +14,7 @@ export const Input: React.FC<Iinput> = ({value, onChangeFunction}) => {
         type="number"
         value={value}
         onChange={(e) =>onChangeFunction(e.target.value)}
-        className="focus: outline-none flex-[10] h-5/6 ml-[0.1rem]" />
+        className="focus: outline-none flex-[10] h-5/6 ml-[0.1rem] rounded-md pl-3" />
       <button className="
         flex flex-[2] 
         bg-[#C57B57] 
