@@ -1,5 +1,5 @@
 # Welcome
-This is a test project, this file will help you to get around easily.
+This is a study project, this file will help you to get around easily.
 
 # Project Setup
 
