@@ -1,7 +1,10 @@
 import { ContentWrapper } from "../Components/Home/ContentWrapper"
+import { StopsCalculator } from "../Components/Home/StopsCalculator"
 
 export const Home: React.FC = () => {
   return (
-    <ContentWrapper><p>LALAL</p></ContentWrapper>
+    <ContentWrapper>
+      <StopsCalculator />
+    </ContentWrapper>
   )
 }
