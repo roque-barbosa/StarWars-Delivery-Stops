@@ -38,7 +38,7 @@ export async function calcAllStops(spaceships: any[], distance:number){
     const element = spaceships[index];
     results.push({
       name: element.name,
-      stops: Math.ceil(stopsCalc(element.MGLT, element.consumables, distance)) 
+      stops: Math.trunc(stopsCalc(element.MGLT, element.consumables, distance)) 
     })
   }
   return results
