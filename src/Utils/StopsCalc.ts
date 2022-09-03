@@ -2,8 +2,10 @@ export function stopsCalc(mgtl:number, consumables: string, distance: number){
   const consumption = consumableToHours(consumables)
   const travelTimeHours = distance / mgtl
   const stops = travelTimeHours / consumption
-
-  return stops
+  if (isNaN(stops)) {
+    return 'Unknow'
+  }
+  return Math.trunc(stops)
   
 }
 
@@ -38,7 +40,7 @@ export async function calcAllStops(spaceships: any[], distance:number){
     const element = spaceships[index];
     results.push({
       name: element.name,
-      stops: Math.trunc(stopsCalc(element.MGLT, element.consumables, distance)) 
+      stops: stopsCalc(element.MGLT, element.consumables, distance)
     })
   }
   return results
